@@ -1,5 +1,22 @@
 html {
   font-family: sans-serif;
+  --base-col: rgb(17, 114, 17);
 }
 
+
 /* Your CSS below here */
+p {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 200px;
+  background-color: var(--base-col);
+  font-size: 1.125rem; /* 18px/16px = 1.125rem */
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(15, 74, 15);
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.2) 30%);
+  box-shadow: 4px 4px 8px black, inset 2px 2px 4px rgba(255,255,255,0.5), inset -2px -2px 4px rgba(0,0,0,0.5);
+}

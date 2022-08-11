@@ -39,3 +39,26 @@ h1 {
 }
 
 /* Your CSS below here */
+
+body {
+  background: url("top-image.png") top no-repeat; /* fallback */
+  background: linear-gradient(to bottom, 
+    rgba(0,0,0,0.2), 
+    rgba(0,0,0,0) 25%, 
+    rgba(0,0,0,0) 75%, 
+    rgba(0,0,0,0.2)),
+  url("bottom-image.png") bottom no-repeat,
+  url("top-image.png") top no-repeat;
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
+}
+
+h1 {
+  background-image: url("logo.png");
+  /* filter: drop-shadow(0.2em 0.2em 0.2em rgb(0,0,0)); */
+  border-radius: 64px; /* apparently this is more browser-compatible than filter: drop-shadow */
+  box-shadow: 3px 3px 3px black;
+}
+
+
